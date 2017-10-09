@@ -1,0 +1,43 @@
+	
+	
+	<div id="footer">
+		<ul class="text-top">
+			<li><a href="javascript:;">联系我们</a><span>|</span></li>
+			<li><a href="javascript:;">招贤纳士</a><span>|</span></li>
+			<li><a href="javascript:;">移动客户端</a><span>|</span></li>
+			<li><a href="javascript:;">风格模块</a><span>|</span></li>
+			<li><a href="javascript:;">官方微博</a></li>
+		</ul>
+        <ul class="text-bottom">
+			<li><a href="javascript:;">微识公司版权所有</a></li>
+			<li><a href="javascript:;">c2017-2020</a></li>
+			<li><a href="javascript:;">京公网安备</a></li>
+			<li><a href="javascript:;">33010004000025号</a></li>
+			<li><a href="javascript:;">ICP备:&nbsp;&nbsp;京B2-20170185-5</a></li>
+			<li><a href="javascript:;">增值电信业务经营许可证:&nbsp;&nbsp;京B2-20170185-5</a></li>
+		</ul>			
+	</div>
+</body>
+<script>
+	$(function() {
+		// 判断url地址 截取指定的分类 tab
+		// console.log(location.href.indexOf('tab'))
+		var tabIndex =  location.href.indexOf('tab');
+		// console.log(tabIndex);
+		if (tabIndex==-1) {
+			tab = 'index'
+		} else {
+			var newUrl = location.href.substring(tabIndex);
+			var tab = newUrl.split('&')[0].substring(newUrl.split('&')[0].indexOf('=')+1);
+		}
+
+
+		// 移除导航默认选中的元素
+		// $('#headernav li.active').removeClass('active');
+
+		// 当前这个
+		$('[data-tab='+tab+']').addClass('active');
+	})
+
+</script>
+</html>

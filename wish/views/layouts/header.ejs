@@ -1,0 +1,53 @@
+<!-- 定义顶部的页面布局 -->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>wish</title>
+	
+	<!-- 引入Bootstrap的css -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<!-- 引入页面的CSS -->
+	<link rel="stylesheet" href="/css/header.css">
+
+	<!-- 引入jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- 引入Bootstrap的js文件 -->
+	<script src="/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/index.css">
+
+</head>
+<body>
+	<!-- 定义导航部分 -->
+	<div id="header">
+		<div id="con" class="container">
+			<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+				<div class="navbar-header">
+					<a id="navbrand" class="navbar-brand" href="/">
+						<img src="/imgs/LOGO@2x.png" alt="">
+					</a>
+				    <div class="col-lg-4">
+					    <div id="inputgroup" class="input-group input-group-sm">
+						      <span class="input-group-btn">
+						         <button class="btn btn-default" type="button"><img src="/imgs/seek copy.png" alt=""></button>
+						      </span>
+						      <input type="text" class="form-control" placeholder="搜索标签或人">
+					    </div>
+	                </div>
+				</div>
+
+				<ul id="headernav" class="nav navbar-nav">
+					<li data-tab="index"><a href="/?tab=index">首页</a></li>
+					<li data-tab="browse"><a href="/browse?tab=browse">浏览</a></li>
+					<li data-tab="intro"><a href="/intro?tab=intro">APP</a></li>
+					<li data-tab="course"><a href="/course?tab=course">微课堂</a></li>
+					<li data-tab="create"><a href="/create?tab=create">微创业</a></li>
+					<li data-tab="more"><a href="/more?tab=more">更多<img src="/imgs/txy-icon16.png" alt=""></a></li>
+				</ul> 
+			</nav>
+	    </div>
+	</div>
+	
