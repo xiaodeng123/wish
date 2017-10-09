@@ -1,0 +1,781 @@
+*{
+	padding:0;
+	margin:0;
+}
+ul{list-style: none;}
+body{
+	background: #ededef;
+}
+
+/*导航开始*/
+	.navs{
+		width:100%;
+		height:80px;
+		background:#fff;
+		box-shadow:0 3px 9px 0px #999;
+	}
+	.container{
+		width:1000px;
+		padding:0;
+		margin:0 auto;
+		background:#fff;
+	}
+
+	.container>div{
+		width:200px;
+		height:28px;
+		background:#fff;
+		float: left;
+		padding:26px 80px 48px 80px;
+	}
+
+	.container>div>a, .territory-right>ul>li>a{
+		font-family: PingFangSC-Regular;
+		font-size: 20px;
+		text-decoration: none;
+		color: #282828;
+	}
+/*导航结束*/
+
+
+/*主体开始*/
+main{
+	width:1200px;
+	height:auto;
+	margin:0 auto;
+	margin-top:60px;
+	/*background:#fff; */
+	position: relative;
+}
+/*热搜开始*/
+	main>.search{
+		width:100%;
+		height: auto;
+		/*display:none;*/
+		position: absolute;
+	}
+	main>.search>ul li{
+		width:285px;
+		overflow: hidden;
+		position: absolute;
+		transition: all .8s;
+	}
+
+	/*头部开始*/
+	.search-top{
+		width:285px;
+		height:70px;
+		background:#fff;
+		padding:12px 15px 16px 10px;
+	}
+	.search-top-img{
+		width:auto;
+		height:42px;
+		float: left;
+	}
+	.search-top-img>a{
+		display: block;
+		text-decoration: none;
+	}
+
+	.search-top-img img{
+		display: block;
+		float: left;
+		height:100%;
+	}
+	.search-top-img span{
+		float: left;
+		display: block;
+		color:#333;
+		margin-top:3px;
+		font-size:14px;
+		margin-left:8px;
+	}
+
+	.search-top-attention{
+		width:55px;
+		height:30px;
+		float: right;
+		border-radius:3px;
+		margin-top:5px;
+		border:1px solid #9A9A9A; 
+	}
+	.search-top-attention>a{
+		display: block;
+		text-decoration: none;
+		color: #9A9A9A;
+		font-size:14px;
+		text-align:center;
+		line-height:30px;
+	}
+	/*头部结束*/
+
+	/*中间图开始*/
+
+	.search>ul>li>.search-center img{
+		display: block;
+		width: 100%;
+	/*	border-color:#f00;*/
+	}
+
+	/*中间图结束*/
+
+	/*底部开始*/
+	.search-bottom{
+		width:100%;
+		height:auto;
+		background:#fff;
+		padding:15px 10px 14px;
+	}
+	.search-bottom>p{
+		font-size:14px;
+		color:#7B7B7B;
+		margin-bottom: 14px;	
+	}
+	.search-bottom>span{
+		margin-left:10px;
+		font-size:12px;
+		color:#7B7B7B;
+	}
+	.search-bottom>span>i{
+		color:#333;
+		font-size:14px;
+		margin-right:3px;
+	}
+
+
+	/*底部结束*/
+/*热搜结束*/
+
+
+/*话题开始*/
+	main>.topic{
+		width:1200px;
+		height: auto;
+		display:none;
+		position: absolute;
+		background:#fff;
+		margin-bottom: 55px;
+	}
+
+	/*选项卡头开始*/
+		.topic-navs{
+			width:1200px;
+			height:83px;
+			padding:24px 40px 25px;
+			background: #fff;
+			border-bottom: 2px solid #979797;
+		}
+		.topic-navs>ul>li{
+			/*width:auto;*/
+			height:36px;
+			padding:5px 40px;
+			float: left;
+			background:none;
+		}
+		.topic-navs>ul>li+li{
+			margin-left:32px;
+		}
+		.topic-navs>ul>li>a{
+			display:block;
+			font-family: PingFangSC-Regular;
+			font-size: 18px;
+			color: #282828;
+			text-decoration: none;
+		}
+		.topic-navs>ul>li.topic-navs-add{
+			/*width:auto;*/
+			height:36px;
+			padding:5px 0;
+			float:right;
+			background:none;
+		}
+		.topic-navs>ul>li.topic-navs-add>a{
+			color: #282828;
+		}
+	/*选项卡头结束*/
+
+	/*话题选项卡开始*/
+	.topic-option{
+		width:100%;
+		height:auto;
+		/*background:#D00;*/
+		padding:32px 22px 0;
+		position: relative;
+	}
+	/*热门开始*/
+		.topic-option-hot{
+			position:absolute;
+			top:0;
+			left:0;
+			background:#fff;
+			padding:32px 22px 304px;
+			/*display: none;*/
+
+		}
+
+		.topic-option-hot>ul>li{
+			width:560px;
+			height: 490px;
+			/*background: #ff0;*/
+			float: left;
+			padding:0px 20px 0 27px;
+			margin-right:20px;
+			margin-bottom:25px;
+			box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
+		}
+		.topic-option-hot>ul>li:nth-child(2n){
+			margin-right:0;
+		}
+
+		.topic-option-hot-text{
+			width:100%;
+			height: 115px;
+			padding:36px 0;
+			/*background:#00f;*/
+		}
+		.topic-option-hot-text>h4{
+			margin: 0;
+			margin-bottom: 13px;
+			font-size: 20px;
+			color: #626262;
+		}
+		.topic-option-hot-text>p{
+			font-size: 13px;
+			color: #626262;
+		}
+
+		.topic-option-hot-img{
+			width:100%;
+		}
+		.topic-option-hot-img>div{
+			width:165px;
+			height:165px;
+			background:#fff;
+			float:left;
+			margin-right:5px;
+			margin-bottom: 5px;
+		}
+		.topic-option-hot-img>div img{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	/*热门结束*/
+
+
+	/*最新开始*/
+		.topic-option-newest{
+			position:absolute;
+			top:0;
+			left:0;
+			background:#fff;
+			width:100%;
+			height: auto;
+			padding:33px 10px 140px 24px;
+			display: none;
+		}
+		.topic-option-newest>ul{
+			float: left;
+			margin-right:20px;
+		}
+		.topic-option-newest>ul>li{
+			width:560px;
+			height:auto;
+			/*background: #ff0;*/
+			padding:33px 10px 16px 20px;
+			/*margin-right:20px;*/
+			margin-bottom:25px;
+			box-shadow: 0 1px 3px 0 rgba(0,0,0,0.08);			
+		}
+		.topic-option-newest>ul>li>a{
+			text-decoration: none;
+		}
+		.topic-option-newest>ul>li>a>h4{
+			margin:0;
+			margin-bottom:14px;
+			font-family: PingFangSC-Medium;
+			font-size: 22px;
+			color: #282828;
+		}
+		.topic-option-newest>ul>li>a>p{
+			margin-bottom:6px;
+			font-family: PingFangSC-Medium;
+			font-size: 16px;
+			color: #CECECE;
+		}
+		.topic-option-newest-img{
+			width:100%;
+			height:172px;
+			/*background:#f00;*/
+		}
+		.topic-option-newest-img>div{
+			width:172px;
+			height: 172px;
+			/*background: #ff0;*/
+			float: left;
+			margin-right:4px;
+		}
+	/*最新结束*/
+	/*话题选项卡结束*/
+/*话题结束*/
+
+/*达人开始*/
+	main>.expert{
+		width:1200px;
+		height: auto;
+		display:none;
+		position: absolute;
+		background:#fff;
+		margin-bottom: 55px;
+	}
+
+	/*选项卡头开始*/
+		.expert-navs{
+			width:1200px;
+			height:83px;
+			padding:24px 40px 25px;
+			background: #fff;
+			border-bottom: 2px solid #979797;
+		}
+		.expert-navs>ul>li{
+			/*width:auto;*/
+			height:36px;
+			padding:5px 24px;
+			float: left;
+			/*background:#363636;*/
+		}
+		.expert-navs>ul>li+li{
+			margin-left:45px;
+		}
+		.expert-navs>ul>li>a{
+			display:block;
+			font-family: PingFangSC-Regular;
+			font-size: 18px;
+			color:#282828;
+			text-decoration: none;
+		}
+	/*选项卡头结束*/
+
+
+	/*达人选项卡开始*/
+	.expert-option{
+		width:100%;
+		height:auto;
+		/*background:#D00;*/
+		position: relative;
+	}
+	/*领域达人开始*/
+		.expert-option-territory{
+			position:absolute;
+			top:0;
+			left:0;
+			background:#fff;
+			/*display: none;*/
+		}
+
+		/*左侧开始*/
+			.territory-left{
+				width:916px;
+				height:auto;
+				float:left;
+				padding:0 0 150px 0;
+				/*background: #ff0;*/
+			}
+
+
+			/*头部开始*/
+			.territory-left-top{
+				width:100%;
+				height:119px;
+				/*background:#f00;*/
+				padding:35px 38px 20px 40px;
+			}
+			.territory-left-top-img{
+				width:auto;
+				height:64px;
+				float: left;
+			}
+			.territory-left-top-img>a{
+				display: block;
+				text-decoration: none;
+			}
+
+			.territory-left-top-img img{
+				display: block;
+				float: left;
+				height:100%;
+			}
+			.territory-left-top-img span{
+				float: left;
+				display: block;
+				font-family: PingFangSC-Regular;
+				font-size: 18px;
+				color: #363636;
+				margin-top:3px;
+				margin-left:10px;
+			}
+
+			.territory-left-top-type{
+				width:auto;
+				height: 18px;
+				/*background:#dd0;*/
+				margin-top:46px;
+				margin-left: 74px;
+			}
+			.territory-left-top-type>ul>li{
+				float: left;
+				height:18px;
+				padding:0px 11px;
+				border-radius:3px;
+				border:1px solid #979797; 
+				line-height:18px;
+				font-size:14px;
+				color:#979797;
+				margin-right:10px;
+			}
+
+			.territory-left-top-attention{
+				width:80px;
+				height:35px;
+				float: right;
+				border-radius:5px;
+				margin-top:5px;
+				overflow: hidden;
+			}
+			.territory-left-top-attention>a, .territory-left-top-attention>a>img{
+				display: block;
+				width:100%;
+			}
+
+			/*头部结束*/
+
+			/*下面图片开始*/
+			.territory-left-buttom{
+				width:100%;
+				height:208px;
+				padding:0 0 0 40px;
+				border-bottom: 2px solid #979797;
+			}
+			.territory-left-buttom>img{
+				display: block;
+				width:200px;
+				height: 164px;
+				float: left;
+				margin-right:12px;
+			}
+
+			/*下面图片结束*/
+		/*左侧结束*/
+
+		/*右侧开始*/
+			.territory-right{
+				width:284px;
+				height:auto;
+				float: left;
+				background:#f00;
+				padding:0;
+			}
+			.territory-right>ul{
+				margin:0;
+			}
+			.territory-right>ul>li{
+				width:100%;
+				height:43px;
+				padding-left:45px;
+				background: #F2F2F2;
+				border-bottom:1px solid #E6E6E6;
+			}
+			.territory-right>ul>.territory-right-top{
+				background: #363636;
+			}
+			.territory-right>ul>li>a{
+				display: block;
+				color:#c1c1c1;
+				font-size:16px;
+				line-height:43px;  
+
+			}
+			.territory-right>ul>.territory-right-top>a{
+				color:#fff;
+				font-size:18px;
+			}
+		/*右侧结束*/
+	/*领域达人结束*/
+
+	/*标签达人开始*/
+		.expert-option-label{
+			/*display:block;*/
+			display: none;
+		}
+	/*标签达人结束*/
+
+	/*关注的人开始*/
+		.expert-option-attention{
+			position:absolute;
+			top:0;
+			left:0;
+			width:1200px;
+			margin-bottom:50px;
+			padding:25px 28px 50px 30px;
+			background:#fff;
+			display: none;
+		}
+		.expert-option-attention>div{
+			float: left;
+		}
+
+		/*顶部文字开始*/
+			.expert-option-attention-top{
+				width:100%;
+				height:27px;
+				/*background: #f00;*/
+			}
+			.expert-option-attention-top>div{
+				float: left;
+				font-family: PingFangSC-Regular;
+				font-size: 12px;
+				color: #282828;
+			}
+		/*顶部文字结束*/
+		
+
+		/*左侧内容开始*/
+			.expert-option-attention-left{
+				width:616px;
+				height:auto;
+				/*background:#f00;*/
+				float: left;
+
+			}
+			.expert-option-attention-left>div{
+				float:left;
+				width:305px;
+				height: 66px;
+				padding:18px 15px;
+				margin-bottom:3px;
+				margin-right:3px;
+				background:#EFEFEF; 
+			}
+			.expert-option-attention-left>div>a>img{
+				width:30px;
+				display: block;
+				float:left;
+				margin-right: 10px;
+			}
+			.expert-option-attention-left>div>a{
+				display: block;
+				text-decoration: none;
+				font-family: PingFangSC-Regular;
+				font-size: 16px;
+				color: #282828;
+			}
+			.expert-option-attention-left>div>div{
+				font-family: PingFangSC-Regular;
+				font-size: 12px;
+				color: #282828;
+			}
+		/*左侧内容结束*/
+
+		/*右侧内容开始*/
+			.expert-option-attention-right{
+				width:230px;
+				height:auto;
+				/*background:#f00;*/
+				float:left;
+				margin-left: 296px;
+			}
+			.expert-option-attention-right>form{
+				padding:0;
+				margin:0;
+				position: relative;
+			}
+			.expert-option-attention-right>form>div.form-group>input{
+				width:230px;
+				height:42px;
+				font-size: 12px;
+			}
+			.expert-option-attention-right>form>div.form-group>a{
+				position:absolute;
+				right: 17px;
+				top:12px;
+				text-decoration: none;
+				color: #282828;
+			}
+
+			.expert-option-attention-right-text{
+				width:100%;
+				height:49px;
+				/*background:#f0f;*/
+				margin-top:42px;
+				padding:17px 0 10px 0;
+				font-family: PingFangSC-Regular;
+				font-size: 16px;
+				color: #282828;
+			}
+			.expert-option-attention-right-img{
+				width:220px;
+			}
+			.expert-option-attention-right-img>a{
+				display:block;
+				width:110px;
+				height:110px;
+				float: left;
+			}
+			.expert-option-attention-right-img img{
+				display: block;
+				width:110px;
+				height: 110px;
+
+			}
+		/*右侧内容结束*/
+	/*关注的人结束*/
+
+	/*寻找好友开始*/
+		.expert-option-seek{
+			position:absolute;
+			top:0;
+			left:0;
+			width:1200px;
+			margin-bottom:50px;
+			padding:35px 140px 172px 120px;
+			background:#fff;
+			display: none;
+		}
+		/*左侧开始*/
+			.expert-option-seek-left{
+			width:384px;
+			height:200px;
+			margin-top:40px;
+			float: left;
+			/*background:#d00;*/
+			}
+			.expert-option-seek-left>p{
+				display: block;
+				font-family: PingFangSC-Medium;
+				font-size:16px;
+				color: #838383;
+			}
+			.expert-option-seek-left>img{
+				display: block;
+				width:120px;
+				height:50px;
+				margin-top:22px;
+
+			}
+		/*左侧开始*/
+
+
+		/*右侧开始*/
+		.expert-option-seek-right{
+			width:270px;
+			height:auto;
+			background: #E4E4E4;
+			float: right;
+		}
+		.expert-option-seek-right>ul{
+			margin:0;
+			padding:0;
+		}
+		.expert-option-seek-right li{
+			width:270px;
+			height:44px;
+			padding: 5px 10px; 
+			border-bottom:1px solid #fff; 
+		}	
+		.expert-option-seek-right a{
+			display: block;
+			text-decoration: none;
+			line-height:34px;
+			font-family: PingFangSC-Regular;
+			font-size: 16px;
+			color:  #838383;
+		}
+		.expert-option-seek-right a>img{
+			display: block;
+			width:34px;
+			height:34px;
+			float: left;
+			margin-right:5px;
+		}	
+
+
+		/*右侧结束*/	
+	/*寻找好友结束*/
+
+
+	/*达人选项卡结束*/
+/*达人结束*/
+
+
+/*专题开始*/
+	main>.special{
+		width:1155px;
+		height: auto;
+		display:none;
+		position: absolute;
+		left:22.5px;
+		margin-bottom: 55px;
+	}
+	.special>ul>li{
+		width:270px;
+		height:170px;
+		float: left;
+		margin-bottom:22px;
+		/*background:#ff0;*/
+		position:relative;
+
+	}
+	.special>ul>li+li{
+		margin-left:25px;
+	}
+	.special>ul>li>a{
+		display:block;
+		text-decoration: none;
+	}
+	.special>ul>li img{
+		display:block;
+		width:100%;
+		height: 100%;
+		position:absolute;
+		left:0;
+		top:0;
+		z-index:0;
+	}
+	.special>ul>li .special-text{
+		width:100%;
+		height:45px;
+		padding: 0 5px;
+		text-align:center;
+		line-height:45px;
+		color:#fff;
+		font-size:14px; 	
+		white-space: nowrap;  
+		text-overflow:ellipsis; 
+		overflow:hidden;
+		background:rgba(0,0,0,.5);	
+		position:absolute;
+		left:0;
+		bottom:0;
+		z-index:1;
+	}
+/*专题结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*主体结束*/
+
+
